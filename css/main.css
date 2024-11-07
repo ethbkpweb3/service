@@ -6779,7 +6779,7 @@ blockquote {
   }
 
   .button.nav.btntop {
-    background-color: var(--body-background);
+    background-color: black;
     box-shadow: none;
     align-self: center;
     width: 50%;
