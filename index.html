@@ -396,8 +396,249 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Section Styles */
+    .ace-eagle-section {
+      background-color: #ffffff; /* Bright yellow */
+      color: #000;
+      text-align: center;
+      padding: 50px 20px;
+      position: relative;
+    }
+
+    .ace-eagle-section h1 {
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .ace-eagle-section h2 {
+      font-size: 2em;
+      font-weight: bold;
+      color: #FFFFFF; /* white text */
+      background: #000; /* black background */
+      display: inline-block;
+      padding: 0 10px;
+    }
+
+    .ace-eagle-banner {
+      background: #000;
+      color: #fff;
+      font-size: 1.5em;
+      padding: 10px 0;
+      margin: 20px 0;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      width: 100%;
+      transform: rotate(-5deg); /* Slant effect */
+      position: relative;
+    }
+
+    .ace-eagle-banner span {
+      display: inline-block;
+      padding: 0 30px;
+    }
+
+    .ace-eagle-section img {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 200px;
+      height: auto;
+    }
+
+    .ace-eagle-section p {
+      font-size: 1.2em;
+      margin: 20px 0;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    .button {
+      background-color: #000;
+      color: #FFD700; /* Yellow text on black button */
+      padding: 10px 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+      border: 2px solid #FFD700;
+      margin: 10px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: #FFD700;
+      color: #000;
+    }
+    /* Container styling */
+.audit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
 }
 
+/* Card styling */
+.audit-card {
+    background: #1f1f2f;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    transform: rotateY(0deg);
+    transition: transform 0.5s ease;
+    color: #eaeaea;
+    position: relative;
+}
+
+/* 3D hover effect */
+.audit-card:hover {
+    transform: rotateY(10deg);
+}
+
+/* Logo Styling */
+.audit-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.audit-logo-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.audit-logo-image-small {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+/* Header styling */
+.audit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.audit-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #eaeaea;
+}
+
+.audit-date {
+    background-color: #4a4a6a;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    color: #eaeaea;
+}
+
+/* Key points styling */
+.audit-key-points {
+    margin-bottom: 20px;
+}
+
+.audit-subtitle {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #a6a6ff;
+}
+
+.audit-list {
+    list-style: decimal;
+    padding-left: 1.2em;
+}
+
+.audit-sublist {
+    list-style: disc;
+    padding-left: 1.5em;
+    color: #eaeaea;
+}
+
+/* Button styling */
+.audit-cta-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #6a5acd;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    text-align: center;
+}
+
+.audit-cta-button:hover {
+    background-color: #8a7acd;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .audit-card {
+        padding: 15px;
+    }
+    .audit-logo-image {
+        width: 60px;
+        height: 60px;
+    }
+    .audit-logo-image-small {
+        width: 40px;
+        height: 40px;
+    }
+    .audit-title {
+        font-size: 1.3em;
+    }
+    .audit-date {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .audit-card {
+        padding: 10px;
+    }
+    .audit-title {
+        font-size: 1.2em;
+    }
+    .audit-date {
+        font-size: 0.7em;
+    }
+    .audit-subtitle {
+        font-size: 1em;
+    }
+    .audit-cta-button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
     </style>
 </head>
 
@@ -499,6 +740,57 @@
             </div>
         </div>
     </div>
+
+     <!-- ACE EAGLE Section -->
+ <section class="ace-eagle-section">
+    <!-- Eagle Image -->
+
+    <!-- Section Title -->
+    <h1>What’s in the Name</h1>
+    <h2>Unveiling AceEagle</h2>
+
+ 
+
+    <!-- Description -->
+    <p>ACEEAGLE stands for pinnacle achievement (ACE) and vigilant guardianship (EAGLE), a symbol of trust and integrity in digital finance. It’s not just a digital currency; it’s an Ethical Reserve, inviting a journey of ethical finance, vigilance against malpractices, and excellence under the watchful eyes of the EAGLE.</p>
+
+
+  </section>
+
+  <div id="goal" class="section goal">
+    <div class="container">
+        <div class="w-layout-grid grid_2-1">
+            <div id="w-node-_2a6100f1-0e25-55e2-dca8-339046b9fa02-849fedfc" class="hero_bg-image">
+                <div class="large-icon_circle w-embed"><svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 9.00011H5V21.0001H2C1.73478 21.0001 1.48043 20.8948 1.29289 20.7072C1.10536 20.5197 1 20.2653 1 20.0001V10.0001C1 9.7349 1.10536 9.48054 1.29289 9.293C1.48043 9.10547 1.73478 9.00011 2 9.00011V9.00011ZM7.293 7.70711L13.693 1.30711C13.7781 1.22181 13.8911 1.17008 14.0112 1.16144C14.1314 1.15281 14.2506 1.18785 14.347 1.26011L15.2 1.90011C15.4369 2.07796 15.6158 2.32196 15.7143 2.60137C15.8127 2.88077 15.8262 3.18306 15.753 3.47011L14.6 8.00011H21C21.5304 8.00011 22.0391 8.21083 22.4142 8.5859C22.7893 8.96097 23 9.46968 23 10.0001V12.1041C23.0003 12.3655 22.9493 12.6244 22.85 12.8661L19.755 20.3811C19.6795 20.5643 19.5513 20.721 19.3866 20.8312C19.2219 20.9414 19.0282 21.0002 18.83 21.0001H8C7.73478 21.0001 7.48043 20.8948 7.29289 20.7072C7.10536 20.5197 7 20.2653 7 20.0001V8.41411C7.00006 8.14892 7.10545 7.8946 7.293 7.70711Z" fill="currentColor"/>
+</svg>
+                </div>
+            </div>
+            <div id="w-node-_2a6100f1-0e25-55e2-dca8-339046b9f9e6-849fedfc" class="flex-vertical mission">
+                <h1 class="h1 text-black">True Independence</h1>
+                <div class="spacer-20"></div>
+                <p class="paragraph">I was born on Independence Day in Suriname, November 25th. <strong>They call us children of independence. </strong><br/><br/>We gained our so-called independence on November 25th 1975, we’ll be celebrating the 50th anniversary next
+                    year. We never truly became independent, corrupt government after corrupt government have kept the people dependent. Now we depend on IMF.<br/>‍<br/>Next year is our year, the year of our <strong>true independence</strong>. Next
+                    year we <strong>fight for our liberty</strong>!</p>
+                <div class="spacer-40"></div>
+                <div class="form-block width-auto w-form">
+                    <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form_horizontal" data-wf-page-id="66fafde061894fc9849fedfc" data-wf-element-id="2a6100f1-0e25-55e2-dca8-339046b9f9f1">
+                        <div class="relative"><label for="email-3" class="input-label absolute">Email Address</label><input class="input_large w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="e.g. name@site.com" type="email" id="email-2" data-ms-member="email"
+                                required="" /></div><input type="submit" data-wait="Please wait..." class="button in-form w-button" value="Submit" /></form>
+                    <div class="message-success w-form-done">
+                        <div>Thank you! Your submission has been received!</div>
+                    </div>
+                    <div class="message-error w-form-fail">
+                        <div>Oops! Something went wrong while submitting the form.</div>
+                    </div>
+                </div>
+                <div class="feature-small"><img src="https://cdn.prod.website-files.com/66fafde061894fc9849fedfd/670a767f0aeb87382e69b3e6_Logo%20handwriting%20Maya.png" loading="lazy" width="Auto" alt="" class="image-2" /></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
     <div class="container">
         <div class="card-grid">
           <div class="card">
@@ -529,6 +821,38 @@
           </div>
         </div>
       </div>
+      <div class="audit-container">
+        <div class="audit-card">
+            <div class="audit-logo">
+                <img src="/c.jpg" alt="OxGuard Logo" class="audit-logo-image">
+                <img src="/c.jpg" alt="Solanex Logo" class="audit-logo-image-small">
+            </div>
+            <div class="audit-content">
+                <div class="audit-header">
+                    <h1 class="audit-title">OxGuard Audit Confirms Solanex Smart Contract Security</h1>
+                    <span class="audit-date">October 2024</span>
+                </div>
+                <div class="audit-key-points">
+                    <h2 class="audit-subtitle">Key Points Of The Audit</h2>
+                    <ol class="audit-list">
+                        <li>Solanex is a standard ERC-20 token, deployed on the Binance Smart Chain. The contract has no mint function and does not include taxes.</li>
+                        <li>Automated and manual analysis of the smart contracts was conducted using several tools and methods, all of which were successfully passed.</li>
+                        <li>The following vulnerabilities were checked and successfully passed:
+                            <ul class="audit-sublist">
+                                <li>Unused variables,</li>
+                                <li>Incorrect variable visibility,</li>
+                                <li>Weak sources of randomness,</li>
+                                <li>Incorrect constructor names,</li>
+                                <li>Reentrancy attacks.</li>
+                            </ul>
+                        </li>
+                        <li>No issues requiring attention were found, confirming the reliability of the smart contract.</li>
+                    </ol>
+                </div>
+                <button class="audit-cta-button">View Full Audit Report</button>
+            </div>
+        </div>
+    </div>
 
       <section class="roadmap-section">
         <h2>Roadmap</h2>
