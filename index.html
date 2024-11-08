@@ -808,7 +808,139 @@
       margin-left: 0;
       margin-top: 20px;
     }
+  }* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.vr-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.text-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 2em;
+  color: #8e44ad;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.feature-item {
+  background-color: #eaeaea;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feature-item img {
+  width: 16px;
+  height: 16px;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .vr-section {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
   }
+
+  .text-content {
+    padding-right: 0;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    font-size: 1em;
+    margin-bottom: 25px;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .feature-item {
+    background-color: #eaeaea;
+    border-radius: 20px;
+    padding: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1em;
+    color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature-item img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .image-container {
+    margin-top: 20px;
+  }
+}
+
     </style>
 </head>
 
@@ -1095,7 +1227,48 @@
             </div>
         </div>
     </div>
+    <div class="vr-section">
+        <!-- Text Content -->
+        <div class="text-content">
+  
+          <h2 class="subtitle">A brief Description
+        </h2>
+          <p class="description">
+            "Oihva is a secure, decentralized tipping wallet app utilizing Lightning Network technology to facilitate instant, transparent transactions between customers and service
+          <h2 class="subtitle"> More Descriptive Option 
+            </h2>
+            <br>
+            Oihva revolutionizes tipping with a seamless, contactless experience. Our app connects customers directly with service professionals, ensuring fair compensation. Leveraging Lightning Network technology, Oihva provides:
 
+          </p><br>
+      
+          <!-- Features -->
+          <div class="features">
+            <div class="feature-item">
+              <img src="/icon.png" alt="Icon">
+              Instant transactions
+
+            </div>
+            <div class="feature-item">
+              <img src="/icon.png" alt="Icon">
+              Low fees
+
+            </div>
+            <div class="feature-item">
+              <img src="/icon.png" alt="Icon">
+              Enhanced transparency
+
+            </div>
+            <div class="feature-item">
+              <img src="/icon.png" alt="Icon">
+              Secure payments
+
+            </div>
+          </div>
+          <br>Empowering service professionals and customers alike, Oihva redefines the tipping experience.
+        </div>
+      </div>
+      
     <section class="roadmap-section" style="background-color: #ffffff;">
     
         <div class="roadmap">
