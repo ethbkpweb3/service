@@ -5477,7 +5477,9 @@ blockquote {
 }
 
 .logo.footerlogo {
-  min-height: 100px;
+  min-height: 500px;
+  max-height: 130px;
+  
 }
 
 .custom-css {
@@ -7184,7 +7186,9 @@ blockquote {
   }
 
   .logo.footerlogo {
-    min-height: 70px;
+    min-height: 100px;
+    
+    
   }
 
   .button_100w.nav {
