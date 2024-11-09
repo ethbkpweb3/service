@@ -4927,7 +4927,7 @@ blockquote {
 
 .hero_bg-image {
   box-shadow: 1px 1px 20px 0 var(--shadow);
-  background-image: url("/3.jpg");
+  background-image: url("/artlogo.jpg");
   background-position: 50%;
   background-size: cover;
   border-radius: 15px;
