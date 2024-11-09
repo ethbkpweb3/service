@@ -282,7 +282,7 @@ html.w-mod-touch * {
 }
 
 .w-inline-block {
-  max-width: 200%;
+  max-width: 100%;
   display: inline-block;
 }
 
@@ -5472,8 +5472,8 @@ blockquote {
 }
 
 .logo {
-  min-height: 170px;
-  max-height: 170px;
+  min-height: 100px;
+  max-height: 150px;
 }
 
 .logo.footerlogo {
