@@ -282,7 +282,7 @@ html.w-mod-touch * {
 }
 
 .w-inline-block {
-  max-width: 100%;
+  max-width: 200%;
   display: inline-block;
 }
 
@@ -2724,7 +2724,7 @@ blockquote {
 
 .logo-section_infinite {
   align-items: center;
-  width: 5000px;
+  width: 500px;
   margin-left: -20px;
   margin-right: -20px;
   padding: 40px;
@@ -5472,8 +5472,8 @@ blockquote {
 }
 
 .logo {
-  min-height: 60px;
-  max-height: 130px;
+  min-height: 170px;
+  max-height: 170px;
 }
 
 .logo.footerlogo {
